@@ -169,8 +169,8 @@
 				22CAFAFF2CD6799F0077DBFE /* Network */,
 				22CAFB1A2CD686480077DBFE /* Persistence */,
 				22CAFB3C2CD698390077DBFE /* Domain */,
+				22186AA22CD195110064D627 /* Presentation */,
 				22CAFAF92CD676F40077DBFE /* App */,
-				22186AA22CD195110064D627 /* View */,
 				22CAFAFA2CD677050077DBFE /* Assets */,
 				22186A962CD194110064D627 /* UICommon */,
 				22186A722CD193CE0064D627 /* Preview Content */,
@@ -224,12 +224,12 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		22186AA22CD195110064D627 /* View */ = {
+		22186AA22CD195110064D627 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				22186AA32CD195200064D627 /* Login */,
 			);
-			path = View;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		22186AA32CD195200064D627 /* Login */ = {
