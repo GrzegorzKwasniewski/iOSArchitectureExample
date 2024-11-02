@@ -1,4 +1,4 @@
 
 enum AuthorizationModule {
-    typealias Auth = AuthorizationNetworkProtocol
+    typealias Network = AuthorizationNetworkProtocol
 }

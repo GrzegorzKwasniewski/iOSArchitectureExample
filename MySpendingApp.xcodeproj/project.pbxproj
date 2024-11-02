@@ -32,6 +32,8 @@
 		22CAFB0E2CD6808F0077DBFE /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB0D2CD6808F0077DBFE /* Server.swift */; };
 		22CAFB102CD6813C0077DBFE /* AuthorizationDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB0F2CD6813C0077DBFE /* AuthorizationDto.swift */; };
 		22CAFB132CD681900077DBFE /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB122CD681900077DBFE /* KeychainAccess */; };
+		22CAFB162CD684380077DBFE /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB152CD684380077DBFE /* Factory */; };
+		22CAFB192CD6848D0077DBFE /* NetworkDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB182CD6848D0077DBFE /* NetworkDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,7 @@
 		22CAFB0B2CD6802F0077DBFE /* AuthorizationApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationApi.swift; sourceTree = "<group>"; };
 		22CAFB0D2CD6808F0077DBFE /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		22CAFB0F2CD6813C0077DBFE /* AuthorizationDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationDto.swift; sourceTree = "<group>"; };
+		22CAFB182CD6848D0077DBFE /* NetworkDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CAFB132CD681900077DBFE /* KeychainAccess in Frameworks */,
+				22CAFB162CD684380077DBFE /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				22CAFAFB2CD677800077DBFE /* Definitions */,
+				22CAFB172CD6846E0077DBFE /* Dependencies */,
 				22CAFAFF2CD6799F0077DBFE /* Network */,
 				22CAFAF92CD676F40077DBFE /* App */,
 				22186AA22CD195110064D627 /* View */,
@@ -268,6 +273,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		22CAFB172CD6846E0077DBFE /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				22CAFB182CD6848D0077DBFE /* NetworkDependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,6 +299,7 @@
 			name = MySpendingApp;
 			packageProductDependencies = (
 				22CAFB122CD681900077DBFE /* KeychainAccess */,
+				22CAFB152CD684380077DBFE /* Factory */,
 			);
 			productName = MySpendingApp;
 			productReference = 22186A672CD193CC0064D627 /* MySpendingApp.app */;
@@ -362,6 +376,7 @@
 			packageReferences = (
 				22CAFAFE2CD678C10077DBFE /* XCRemoteSwiftPackageReference "Moya" */,
 				22CAFB112CD681900077DBFE /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				22CAFB142CD684380077DBFE /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			productRefGroup = 22186A682CD193CC0064D627 /* Products */;
 			projectDirPath = "";
@@ -414,6 +429,7 @@
 				22CAFB032CD67C800077DBFE /* AuthorizationNetworkManager.swift in Sources */,
 				22CAFB0A2CD67ECD0077DBFE /* UserDto.swift in Sources */,
 				22186AA82CD1970F0064D627 /* PrimaryButton.swift in Sources */,
+				22CAFB192CD6848D0077DBFE /* NetworkDependencies.swift in Sources */,
 				22186AA52CD195A90064D627 /* WelcomeView.swift in Sources */,
 				22CAFB082CD67DD60077DBFE /* AuthorizationResponseDto.swift in Sources */,
 				22CAFAF82CD676C80077DBFE /* AppDelegate.swift in Sources */,
@@ -767,6 +783,14 @@
 				kind = branch;
 			};
 		};
+		22CAFB142CD684380077DBFE /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -774,6 +798,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 22CAFB112CD681900077DBFE /* XCRemoteSwiftPackageReference "KeychainAccess" */;
 			productName = KeychainAccess;
+		};
+		22CAFB152CD684380077DBFE /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22CAFB142CD684380077DBFE /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
