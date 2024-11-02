@@ -40,27 +40,21 @@ final class LoginViewModel<ViewState>: AuthorizationModule.ViewModel where ViewS
                 userPassword: loginViewState.userPasswordValue
             )
             .receive(on: DispatchQueue.main)
-            .ignoreOutput()
             .sink(
-                receiveCompletion: { [weak self] value in
-                                        
-                    guard let self = self else { return }
-                    switch value {
-                    case let .failure(error):
+                receiveCompletion: { [weak self] completion in
+                    if let self, case let .failure(error) = completion {
                         self.loginViewState.showErrorAlert()
                         Logger.navigation.error("Email login error. Error = \(String(describing: error.getLastError()))")
-                    case .finished:
-                        self.goToHome()
                     }
                 },
                 receiveValue: { _ in
-                    // No value will be received, so we are ignoring this block.
+                    self.goToHome()
                 })
             .store(in: &disposables)
     }
     
     func goToHome() {
-        navigation.popTo(.main)
+        navigation.push(.main)
     }
     
     func pushPasswordReminderView() {
