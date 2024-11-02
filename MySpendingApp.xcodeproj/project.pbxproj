@@ -43,6 +43,12 @@
 		22CAFB302CD68BBF0077DBFE /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB2F2CD68BBF0077DBFE /* RxMoya */; };
 		22CAFB332CD68F7C0077DBFE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB322CD68F7C0077DBFE /* RealmSwift */; };
 		22CAFB392CD693FE0077DBFE /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB382CD693FE0077DBFE /* Factory */; };
+		22CAFB3B2CD697D10077DBFE /* PersistenceDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB3A2CD697D10077DBFE /* PersistenceDependencies.swift */; };
+		22CAFB3F2CD6986D0077DBFE /* UserModelDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB3E2CD6986D0077DBFE /* UserModelDto.swift */; };
+		22CAFB422CD698EC0077DBFE /* AuthorizationDomainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB412CD698EC0077DBFE /* AuthorizationDomainManager.swift */; };
+		22CAFB452CD69A1D0077DBFE /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB442CD69A1D0077DBFE /* KeychainManager.swift */; };
+		22CAFB482CD69AB70077DBFE /* AuthorizationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB472CD69AB70077DBFE /* AuthorizationError.swift */; };
+		22CAFB4A2CD69B6B0077DBFE /* AggregatedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB492CD69B6B0077DBFE /* AggregatedError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +101,12 @@
 		22CAFB1D2CD686C90077DBFE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		22CAFB252CD68A210077DBFE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		22CAFB272CD68B140077DBFE /* UserPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPersistenceManager.swift; sourceTree = "<group>"; };
+		22CAFB3A2CD697D10077DBFE /* PersistenceDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceDependencies.swift; sourceTree = "<group>"; };
+		22CAFB3E2CD6986D0077DBFE /* UserModelDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelDto.swift; sourceTree = "<group>"; };
+		22CAFB412CD698EC0077DBFE /* AuthorizationDomainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationDomainManager.swift; sourceTree = "<group>"; };
+		22CAFB442CD69A1D0077DBFE /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		22CAFB472CD69AB70077DBFE /* AuthorizationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationError.swift; sourceTree = "<group>"; };
+		22CAFB492CD69B6B0077DBFE /* AggregatedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregatedError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +168,7 @@
 				22CAFB172CD6846E0077DBFE /* Dependencies */,
 				22CAFAFF2CD6799F0077DBFE /* Network */,
 				22CAFB1A2CD686480077DBFE /* Persistence */,
+				22CAFB3C2CD698390077DBFE /* Domain */,
 				22CAFAF92CD676F40077DBFE /* App */,
 				22186AA22CD195110064D627 /* View */,
 				22CAFAFA2CD677050077DBFE /* Assets */,
@@ -297,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				22CAFB182CD6848D0077DBFE /* NetworkDependencies.swift */,
+				22CAFB3A2CD697D10077DBFE /* PersistenceDependencies.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -304,6 +318,7 @@
 		22CAFB1A2CD686480077DBFE /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				22CAFB432CD6991E0077DBFE /* Keychain */,
 				22CAFB242CD68A090077DBFE /* Authorization */,
 				22CAFB1B2CD6865B0077DBFE /* PersistenceStorage.swift */,
 			);
@@ -317,6 +332,41 @@
 				22CAFB272CD68B140077DBFE /* UserPersistenceManager.swift */,
 			);
 			path = Authorization;
+			sourceTree = "<group>";
+		};
+		22CAFB3C2CD698390077DBFE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				22CAFB462CD69AAC0077DBFE /* Error */,
+				22CAFB3D2CD698550077DBFE /* Authorization */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		22CAFB3D2CD698550077DBFE /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				22CAFB3E2CD6986D0077DBFE /* UserModelDto.swift */,
+				22CAFB412CD698EC0077DBFE /* AuthorizationDomainManager.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		22CAFB432CD6991E0077DBFE /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				22CAFB442CD69A1D0077DBFE /* KeychainManager.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		22CAFB462CD69AAC0077DBFE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				22CAFB472CD69AB70077DBFE /* AuthorizationError.swift */,
+				22CAFB492CD69B6B0077DBFE /* AggregatedError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,23 +518,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CAFB3B2CD697D10077DBFE /* PersistenceDependencies.swift in Sources */,
 				22CAFB0C2CD6802F0077DBFE /* AuthorizationApi.swift in Sources */,
 				22186AAE2CD19F210064D627 /* SignInView.swift in Sources */,
 				22CAFB032CD67C800077DBFE /* AuthorizationNetworkManager.swift in Sources */,
 				22CAFB0A2CD67ECD0077DBFE /* UserDto.swift in Sources */,
 				22186AA82CD1970F0064D627 /* PrimaryButton.swift in Sources */,
 				22CAFB192CD6848D0077DBFE /* NetworkDependencies.swift in Sources */,
+				22CAFB452CD69A1D0077DBFE /* KeychainManager.swift in Sources */,
 				22186AA52CD195A90064D627 /* WelcomeView.swift in Sources */,
 				22CAFB082CD67DD60077DBFE /* AuthorizationResponseDto.swift in Sources */,
 				22CAFAF82CD676C80077DBFE /* AppDelegate.swift in Sources */,
+				22CAFB482CD69AB70077DBFE /* AuthorizationError.swift in Sources */,
 				22CAFB1E2CD686C90077DBFE /* Persistence.swift in Sources */,
 				22CAFB102CD6813C0077DBFE /* AuthorizationDto.swift in Sources */,
 				22186AAA2CD19ABB0064D627 /* SecondaryButton.swift in Sources */,
 				22CAFB0E2CD6808F0077DBFE /* Server.swift in Sources */,
+				22CAFB422CD698EC0077DBFE /* AuthorizationDomainManager.swift in Sources */,
 				22CAFAFD2CD677970077DBFE /* AuthorizationModule.swift in Sources */,
 				22CAFB282CD68B140077DBFE /* UserPersistenceManager.swift in Sources */,
+				22CAFB4A2CD69B6B0077DBFE /* AggregatedError.swift in Sources */,
 				22186AAC2CD19C2A0064D627 /* SocialSignupView.swift in Sources */,
 				22CAFB262CD68A210077DBFE /* UserModel.swift in Sources */,
+				22CAFB3F2CD6986D0077DBFE /* UserModelDto.swift in Sources */,
 				22186A6B2CD193CC0064D627 /* MySpendingAppApp.swift in Sources */,
 				22CAFB1C2CD6865B0077DBFE /* PersistenceStorage.swift in Sources */,
 				22186A982CD1942B0064D627 /* UIExtension.swift in Sources */,

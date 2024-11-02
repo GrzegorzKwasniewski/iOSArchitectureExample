@@ -9,7 +9,7 @@ final class UserModel: Object {
     @Persisted var userName: String = ""
     @Persisted var email: String = ""
     
-    convenience init(model: UserModel) {
+    convenience init(model: UserModelDto) {
         self.init()
         id = model.id
         email = model.email
