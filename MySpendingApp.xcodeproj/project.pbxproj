@@ -32,18 +32,17 @@
 		22CAFB0E2CD6808F0077DBFE /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB0D2CD6808F0077DBFE /* Server.swift */; };
 		22CAFB102CD6813C0077DBFE /* AuthorizationDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB0F2CD6813C0077DBFE /* AuthorizationDto.swift */; };
 		22CAFB132CD681900077DBFE /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB122CD681900077DBFE /* KeychainAccess */; };
-		22CAFB162CD684380077DBFE /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB152CD684380077DBFE /* Factory */; };
 		22CAFB192CD6848D0077DBFE /* NetworkDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB182CD6848D0077DBFE /* NetworkDependencies.swift */; };
 		22CAFB1C2CD6865B0077DBFE /* PersistenceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB1B2CD6865B0077DBFE /* PersistenceStorage.swift */; };
 		22CAFB1E2CD686C90077DBFE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB1D2CD686C90077DBFE /* Persistence.swift */; };
-		22CAFB212CD689C20077DBFE /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB202CD689C20077DBFE /* Realm */; };
-		22CAFB232CD689C20077DBFE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB222CD689C20077DBFE /* RealmSwift */; };
 		22CAFB262CD68A210077DBFE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB252CD68A210077DBFE /* UserModel.swift */; };
 		22CAFB282CD68B140077DBFE /* UserPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB272CD68B140077DBFE /* UserPersistenceManager.swift */; };
 		22CAFB2A2CD68BBF0077DBFE /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB292CD68BBF0077DBFE /* CombineMoya */; };
 		22CAFB2C2CD68BBF0077DBFE /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB2B2CD68BBF0077DBFE /* Moya */; };
 		22CAFB2E2CD68BBF0077DBFE /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB2D2CD68BBF0077DBFE /* ReactiveMoya */; };
 		22CAFB302CD68BBF0077DBFE /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB2F2CD68BBF0077DBFE /* RxMoya */; };
+		22CAFB332CD68F7C0077DBFE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB322CD68F7C0077DBFE /* RealmSwift */; };
+		22CAFB392CD693FE0077DBFE /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB382CD693FE0077DBFE /* Factory */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,13 +103,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CAFB2E2CD68BBF0077DBFE /* ReactiveMoya in Frameworks */,
-				22CAFB232CD689C20077DBFE /* RealmSwift in Frameworks */,
-				22CAFB212CD689C20077DBFE /* Realm in Frameworks */,
 				22CAFB2C2CD68BBF0077DBFE /* Moya in Frameworks */,
+				22CAFB392CD693FE0077DBFE /* Factory in Frameworks */,
+				22CAFB332CD68F7C0077DBFE /* RealmSwift in Frameworks */,
 				22CAFB132CD681900077DBFE /* KeychainAccess in Frameworks */,
 				22CAFB2A2CD68BBF0077DBFE /* CombineMoya in Frameworks */,
 				22CAFB302CD68BBF0077DBFE /* RxMoya in Frameworks */,
-				22CAFB162CD684380077DBFE /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,13 +337,12 @@
 			name = MySpendingApp;
 			packageProductDependencies = (
 				22CAFB122CD681900077DBFE /* KeychainAccess */,
-				22CAFB152CD684380077DBFE /* Factory */,
-				22CAFB202CD689C20077DBFE /* Realm */,
-				22CAFB222CD689C20077DBFE /* RealmSwift */,
 				22CAFB292CD68BBF0077DBFE /* CombineMoya */,
 				22CAFB2B2CD68BBF0077DBFE /* Moya */,
 				22CAFB2D2CD68BBF0077DBFE /* ReactiveMoya */,
 				22CAFB2F2CD68BBF0077DBFE /* RxMoya */,
+				22CAFB322CD68F7C0077DBFE /* RealmSwift */,
+				22CAFB382CD693FE0077DBFE /* Factory */,
 			);
 			productName = MySpendingApp;
 			productReference = 22186A672CD193CC0064D627 /* MySpendingApp.app */;
@@ -422,8 +419,8 @@
 			packageReferences = (
 				22CAFAFE2CD678C10077DBFE /* XCRemoteSwiftPackageReference "Moya" */,
 				22CAFB112CD681900077DBFE /* XCRemoteSwiftPackageReference "KeychainAccess" */,
-				22CAFB142CD684380077DBFE /* XCRemoteSwiftPackageReference "Factory" */,
-				22CAFB1F2CD689C20077DBFE /* XCRemoteSwiftPackageReference "realm-swift" */,
+				22CAFB312CD68F7B0077DBFE /* XCRemoteSwiftPackageReference "realm-swift" */,
+				22CAFB372CD693FE0077DBFE /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			productRefGroup = 22186A682CD193CC0064D627 /* Products */;
 			projectDirPath = "";
@@ -834,20 +831,20 @@
 				kind = branch;
 			};
 		};
-		22CAFB142CD684380077DBFE /* XCRemoteSwiftPackageReference "Factory" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hmlongco/Factory.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.4.1;
-			};
-		};
-		22CAFB1F2CD689C20077DBFE /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		22CAFB312CD68F7B0077DBFE /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
 				kind = exactVersion;
 				version = 10.53.1;
+			};
+		};
+		22CAFB372CD693FE0077DBFE /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -857,21 +854,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 22CAFB112CD681900077DBFE /* XCRemoteSwiftPackageReference "KeychainAccess" */;
 			productName = KeychainAccess;
-		};
-		22CAFB152CD684380077DBFE /* Factory */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 22CAFB142CD684380077DBFE /* XCRemoteSwiftPackageReference "Factory" */;
-			productName = Factory;
-		};
-		22CAFB202CD689C20077DBFE /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 22CAFB1F2CD689C20077DBFE /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		22CAFB222CD689C20077DBFE /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 22CAFB1F2CD689C20077DBFE /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
 		};
 		22CAFB292CD68BBF0077DBFE /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -892,6 +874,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 22CAFAFE2CD678C10077DBFE /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		22CAFB322CD68F7C0077DBFE /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22CAFB312CD68F7B0077DBFE /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		22CAFB382CD693FE0077DBFE /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22CAFB372CD693FE0077DBFE /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,3 +1,5 @@
+import Foundation
+
 enum Server {
     case production
     case test
