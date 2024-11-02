@@ -49,6 +49,11 @@
 		22CAFB452CD69A1D0077DBFE /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB442CD69A1D0077DBFE /* KeychainManager.swift */; };
 		22CAFB482CD69AB70077DBFE /* AuthorizationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB472CD69AB70077DBFE /* AuthorizationError.swift */; };
 		22CAFB4A2CD69B6B0077DBFE /* AggregatedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB492CD69B6B0077DBFE /* AggregatedError.swift */; };
+		22CAFB4D2CD69F310077DBFE /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB4C2CD69F310077DBFE /* AppNavigation.swift */; };
+		22CAFB4F2CD6A0020077DBFE /* BaseNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB4E2CD6A0020077DBFE /* BaseNavigation.swift */; };
+		22CAFB522CD6A0AD0077DBFE /* Logger+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB512CD6A0AD0077DBFE /* Logger+Ext.swift */; };
+		22CAFB542CD6A1830077DBFE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB532CD6A1830077DBFE /* LoginView.swift */; };
+		22CAFB562CD6A1BC0077DBFE /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB552CD6A1BC0077DBFE /* ViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +112,11 @@
 		22CAFB442CD69A1D0077DBFE /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		22CAFB472CD69AB70077DBFE /* AuthorizationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationError.swift; sourceTree = "<group>"; };
 		22CAFB492CD69B6B0077DBFE /* AggregatedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregatedError.swift; sourceTree = "<group>"; };
+		22CAFB4C2CD69F310077DBFE /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
+		22CAFB4E2CD6A0020077DBFE /* BaseNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigation.swift; sourceTree = "<group>"; };
+		22CAFB512CD6A0AD0077DBFE /* Logger+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Ext.swift"; sourceTree = "<group>"; };
+		22CAFB532CD6A1830077DBFE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		22CAFB552CD6A1BC0077DBFE /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,13 +176,14 @@
 			children = (
 				22CAFAFB2CD677800077DBFE /* Definitions */,
 				22CAFB172CD6846E0077DBFE /* Dependencies */,
+				22CAFB4B2CD69F0E0077DBFE /* Navigation */,
 				22CAFAFF2CD6799F0077DBFE /* Network */,
 				22CAFB1A2CD686480077DBFE /* Persistence */,
 				22CAFB3C2CD698390077DBFE /* Domain */,
 				22186AA22CD195110064D627 /* Presentation */,
 				22CAFAF92CD676F40077DBFE /* App */,
 				22CAFAFA2CD677050077DBFE /* Assets */,
-				22186A962CD194110064D627 /* UICommon */,
+				22CAFB502CD6A0970077DBFE /* Common */,
 				22186A722CD193CE0064D627 /* Preview Content */,
 			);
 			path = MySpendingApp;
@@ -238,6 +249,7 @@
 				22186AA42CD195A90064D627 /* WelcomeView.swift */,
 				22186AAB2CD19C2A0064D627 /* SocialSignupView.swift */,
 				22186AAD2CD19F210064D627 /* SignInView.swift */,
+				22CAFB532CD6A1830077DBFE /* LoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -367,6 +379,25 @@
 				22CAFB492CD69B6B0077DBFE /* AggregatedError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		22CAFB4B2CD69F0E0077DBFE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				22CAFB4C2CD69F310077DBFE /* AppNavigation.swift */,
+				22CAFB4E2CD6A0020077DBFE /* BaseNavigation.swift */,
+				22CAFB552CD6A1BC0077DBFE /* ViewFactory.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		22CAFB502CD6A0970077DBFE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				22186A962CD194110064D627 /* UICommon */,
+				22CAFB512CD6A0AD0077DBFE /* Logger+Ext.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -524,6 +555,8 @@
 				22CAFB032CD67C800077DBFE /* AuthorizationNetworkManager.swift in Sources */,
 				22CAFB0A2CD67ECD0077DBFE /* UserDto.swift in Sources */,
 				22186AA82CD1970F0064D627 /* PrimaryButton.swift in Sources */,
+				22CAFB522CD6A0AD0077DBFE /* Logger+Ext.swift in Sources */,
+				22CAFB4D2CD69F310077DBFE /* AppNavigation.swift in Sources */,
 				22CAFB192CD6848D0077DBFE /* NetworkDependencies.swift in Sources */,
 				22CAFB452CD69A1D0077DBFE /* KeychainManager.swift in Sources */,
 				22186AA52CD195A90064D627 /* WelcomeView.swift in Sources */,
@@ -534,11 +567,14 @@
 				22CAFB102CD6813C0077DBFE /* AuthorizationDto.swift in Sources */,
 				22186AAA2CD19ABB0064D627 /* SecondaryButton.swift in Sources */,
 				22CAFB0E2CD6808F0077DBFE /* Server.swift in Sources */,
+				22CAFB542CD6A1830077DBFE /* LoginView.swift in Sources */,
 				22CAFB422CD698EC0077DBFE /* AuthorizationDomainManager.swift in Sources */,
 				22CAFAFD2CD677970077DBFE /* AuthorizationModule.swift in Sources */,
+				22CAFB562CD6A1BC0077DBFE /* ViewFactory.swift in Sources */,
 				22CAFB282CD68B140077DBFE /* UserPersistenceManager.swift in Sources */,
 				22CAFB4A2CD69B6B0077DBFE /* AggregatedError.swift in Sources */,
 				22186AAC2CD19C2A0064D627 /* SocialSignupView.swift in Sources */,
+				22CAFB4F2CD6A0020077DBFE /* BaseNavigation.swift in Sources */,
 				22CAFB262CD68A210077DBFE /* UserModel.swift in Sources */,
 				22CAFB3F2CD6986D0077DBFE /* UserModelDto.swift in Sources */,
 				22186A6B2CD193CC0064D627 /* MySpendingAppApp.swift in Sources */,

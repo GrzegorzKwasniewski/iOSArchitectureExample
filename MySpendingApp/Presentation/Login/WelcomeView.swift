@@ -1,10 +1,3 @@
-//
-//  WelcomeView.swift
-//  MySpendingApp
-//
-//  Created by Grzesiek on 29/10/2024.
-//
-
 import SwiftUI
 
 struct WelcomView: View {
