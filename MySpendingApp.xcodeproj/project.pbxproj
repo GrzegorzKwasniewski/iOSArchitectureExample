@@ -54,6 +54,11 @@
 		22CAFB522CD6A0AD0077DBFE /* Logger+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB512CD6A0AD0077DBFE /* Logger+Ext.swift */; };
 		22CAFB542CD6A1830077DBFE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB532CD6A1830077DBFE /* LoginView.swift */; };
 		22CAFB562CD6A1BC0077DBFE /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB552CD6A1BC0077DBFE /* ViewFactory.swift */; };
+		22CAFB592CD6A7B70077DBFE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB582CD6A7B70077DBFE /* LoginViewModel.swift */; };
+		22CAFB5B2CD6A88E0077DBFE /* LoginViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB5A2CD6A88E0077DBFE /* LoginViewState.swift */; };
+		22CAFB5D2CD6AB850077DBFE /* ViewDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB5C2CD6AB850077DBFE /* ViewDependencies.swift */; };
+		22CAFB5F2CD6AC700077DBFE /* DomainDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB5E2CD6AC700077DBFE /* DomainDependencies.swift */; };
+		22CAFB612CD6AEB50077DBFE /* NavigationDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB602CD6AEB50077DBFE /* NavigationDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +122,11 @@
 		22CAFB512CD6A0AD0077DBFE /* Logger+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Ext.swift"; sourceTree = "<group>"; };
 		22CAFB532CD6A1830077DBFE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		22CAFB552CD6A1BC0077DBFE /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		22CAFB582CD6A7B70077DBFE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		22CAFB5A2CD6A88E0077DBFE /* LoginViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewState.swift; sourceTree = "<group>"; };
+		22CAFB5C2CD6AB850077DBFE /* ViewDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDependencies.swift; sourceTree = "<group>"; };
+		22CAFB5E2CD6AC700077DBFE /* DomainDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainDependencies.swift; sourceTree = "<group>"; };
+		22CAFB602CD6AEB50077DBFE /* NavigationDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +248,7 @@
 		22186AA22CD195110064D627 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				22CAFB572CD6A79A0077DBFE /* Temp */,
 				22186AA32CD195200064D627 /* Login */,
 			);
 			path = Presentation;
@@ -246,10 +257,9 @@
 		22186AA32CD195200064D627 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				22186AA42CD195A90064D627 /* WelcomeView.swift */,
-				22186AAB2CD19C2A0064D627 /* SocialSignupView.swift */,
-				22186AAD2CD19F210064D627 /* SignInView.swift */,
 				22CAFB532CD6A1830077DBFE /* LoginView.swift */,
+				22CAFB582CD6A7B70077DBFE /* LoginViewModel.swift */,
+				22CAFB5A2CD6A88E0077DBFE /* LoginViewState.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -323,6 +333,9 @@
 			children = (
 				22CAFB182CD6848D0077DBFE /* NetworkDependencies.swift */,
 				22CAFB3A2CD697D10077DBFE /* PersistenceDependencies.swift */,
+				22CAFB5C2CD6AB850077DBFE /* ViewDependencies.swift */,
+				22CAFB5E2CD6AC700077DBFE /* DomainDependencies.swift */,
+				22CAFB602CD6AEB50077DBFE /* NavigationDependencies.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -398,6 +411,16 @@
 				22CAFB512CD6A0AD0077DBFE /* Logger+Ext.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		22CAFB572CD6A79A0077DBFE /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+				22186AAB2CD19C2A0064D627 /* SocialSignupView.swift */,
+				22186AAD2CD19F210064D627 /* SignInView.swift */,
+				22186AA42CD195A90064D627 /* WelcomeView.swift */,
+			);
+			path = Temp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,7 +577,9 @@
 				22186AAE2CD19F210064D627 /* SignInView.swift in Sources */,
 				22CAFB032CD67C800077DBFE /* AuthorizationNetworkManager.swift in Sources */,
 				22CAFB0A2CD67ECD0077DBFE /* UserDto.swift in Sources */,
+				22CAFB592CD6A7B70077DBFE /* LoginViewModel.swift in Sources */,
 				22186AA82CD1970F0064D627 /* PrimaryButton.swift in Sources */,
+				22CAFB5B2CD6A88E0077DBFE /* LoginViewState.swift in Sources */,
 				22CAFB522CD6A0AD0077DBFE /* Logger+Ext.swift in Sources */,
 				22CAFB4D2CD69F310077DBFE /* AppNavigation.swift in Sources */,
 				22CAFB192CD6848D0077DBFE /* NetworkDependencies.swift in Sources */,
@@ -565,6 +590,7 @@
 				22CAFB482CD69AB70077DBFE /* AuthorizationError.swift in Sources */,
 				22CAFB1E2CD686C90077DBFE /* Persistence.swift in Sources */,
 				22CAFB102CD6813C0077DBFE /* AuthorizationDto.swift in Sources */,
+				22CAFB612CD6AEB50077DBFE /* NavigationDependencies.swift in Sources */,
 				22186AAA2CD19ABB0064D627 /* SecondaryButton.swift in Sources */,
 				22CAFB0E2CD6808F0077DBFE /* Server.swift in Sources */,
 				22CAFB542CD6A1830077DBFE /* LoginView.swift in Sources */,
@@ -578,6 +604,8 @@
 				22CAFB262CD68A210077DBFE /* UserModel.swift in Sources */,
 				22CAFB3F2CD6986D0077DBFE /* UserModelDto.swift in Sources */,
 				22186A6B2CD193CC0064D627 /* MySpendingAppApp.swift in Sources */,
+				22CAFB5D2CD6AB850077DBFE /* ViewDependencies.swift in Sources */,
+				22CAFB5F2CD6AC700077DBFE /* DomainDependencies.swift in Sources */,
 				22CAFB1C2CD6865B0077DBFE /* PersistenceStorage.swift in Sources */,
 				22186A982CD1942B0064D627 /* UIExtension.swift in Sources */,
 			);

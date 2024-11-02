@@ -14,14 +14,14 @@ final class AuthorizationDomainManager: AuthorizationModule.Domain {
     
     private let authorizationManager: AuthorizationModule.Network
     private let userStorageManager: AuthorizationModule.Persistence
-    private let keychainManager: AuthorizationModule.Session
+    private let keychainManager: PersistenceModule.Session
     
     // MARK: - INITIALIZER
     
     init(
         authorizationManager: AuthorizationModule.Network,
         userStorageManager: AuthorizationModule.Persistence,
-        keychainManager: AuthorizationModule.Session
+        keychainManager: PersistenceModule.Session
     ) {
         self.authorizationManager = authorizationManager
         self.userStorageManager = userStorageManager

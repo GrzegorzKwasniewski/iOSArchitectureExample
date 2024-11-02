@@ -13,7 +13,7 @@ protocol KeychainProtocol {
 
 // MARK: - CLASS DEFINITION
 
-final class KeychainManager: AuthorizationModule.Session {
+final class KeychainManager: PersistenceModule.Session {
     // MARK: - PRIVATE PROPERTIES
 
     private let keychain: Keychain

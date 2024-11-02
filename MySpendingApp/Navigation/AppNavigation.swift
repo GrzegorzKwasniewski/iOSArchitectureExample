@@ -20,7 +20,10 @@ final class AppNavigation: BaseNavigation<AppNavigation.Navigation> {
             case .login:
                 ViewFactory.login
             case .main:
-                ViewFactory.main
+                ViewFactory.login
+                //ViewFactory.main
+            default:
+                ViewFactory.login
             }
         }
     }
