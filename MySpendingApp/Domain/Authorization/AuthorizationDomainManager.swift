@@ -33,14 +33,10 @@ final class AuthorizationDomainManager: AuthorizationModule.Domain {
     func emailLoginMergeWithToken(userEmail: String, userPassword: String) -> AnyPublisher<Bool, AggregatedError> {
         authorizationManager
             .postLogin(email: userEmail, password: userPassword)
-            .mapError { (moyaError) -> AggregatedError in
-                AggregatedError().appendError(error: moyaError)
-            }
+            .eraseToAggregatedError()
             .flatMap { (response) in
                 return self.keychainManager.storeSessionToken(token: response.accessToken)
-                    .mapError { (authorizationError) -> AggregatedError in
-                        AggregatedError().appendError(error: authorizationError)
-                    }
+                    .eraseToAggregatedError()
             }
             .eraseToAnyPublisher()
     }
@@ -48,14 +44,11 @@ final class AuthorizationDomainManager: AuthorizationModule.Domain {
     func emailLoginMergeWithPersitence(userEmail: String, userPassword: String) -> AnyPublisher<Bool, AggregatedError> {
         authorizationManager
             .postLogin(email: userEmail, password: userPassword)
-            .mapError { (moyaError) -> AggregatedError in
-                AggregatedError().appendError(error: moyaError)
-            }.flatMap { (response) in
+            .eraseToAggregatedError()
+            .flatMap { (response) in
                 return self.userStorageManager
                     .createUser(model: UserModel(response: response))
-                    .mapError { (authorizationError) -> AggregatedError in
-                        AggregatedError().appendError(error: authorizationError)
-                    }
+                    .eraseToAggregatedError()
             }
             .eraseToAnyPublisher()
     }

@@ -1,4 +1,4 @@
-import Foundation
+import Combine
 
 final class AggregatedError: Error {
     
@@ -26,5 +26,11 @@ extension Collection {
     /// Returns the element at the specified index if it is within bounds, otherwise nil.
     subscript(safe index: Index) -> Element? {
         return indices.contains(index) ? self[index] : nil
+    }
+}
+
+extension Publisher {
+    func eraseToAggregatedError() -> Publishers.MapError<Self, AggregatedError> {
+        mapError { AggregatedError().appendError(error: $0) }
     }
 }
