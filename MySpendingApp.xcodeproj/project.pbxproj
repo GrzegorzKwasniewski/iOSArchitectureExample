@@ -24,7 +24,7 @@
 		22186AAC2CD19C2A0064D627 /* SocialSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22186AAB2CD19C2A0064D627 /* SocialSignupView.swift */; };
 		22186AAE2CD19F210064D627 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22186AAD2CD19F210064D627 /* SignInView.swift */; };
 		22CAFAF82CD676C80077DBFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFAF72CD676C80077DBFE /* AppDelegate.swift */; };
-		22CAFAFD2CD677970077DBFE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFAFC2CD677970077DBFE /* Network.swift */; };
+		22CAFAFD2CD677970077DBFE /* AuthorizationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFAFC2CD677970077DBFE /* AuthorizationModule.swift */; };
 		22CAFB032CD67C800077DBFE /* AuthorizationNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB022CD67C800077DBFE /* AuthorizationNetworkManager.swift */; };
 		22CAFB082CD67DD60077DBFE /* AuthorizationResponseDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB072CD67DD60077DBFE /* AuthorizationResponseDto.swift */; };
 		22CAFB0A2CD67ECD0077DBFE /* UserDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB092CD67ECD0077DBFE /* UserDto.swift */; };
@@ -34,6 +34,16 @@
 		22CAFB132CD681900077DBFE /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB122CD681900077DBFE /* KeychainAccess */; };
 		22CAFB162CD684380077DBFE /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB152CD684380077DBFE /* Factory */; };
 		22CAFB192CD6848D0077DBFE /* NetworkDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB182CD6848D0077DBFE /* NetworkDependencies.swift */; };
+		22CAFB1C2CD6865B0077DBFE /* PersistenceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB1B2CD6865B0077DBFE /* PersistenceStorage.swift */; };
+		22CAFB1E2CD686C90077DBFE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB1D2CD686C90077DBFE /* Persistence.swift */; };
+		22CAFB212CD689C20077DBFE /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB202CD689C20077DBFE /* Realm */; };
+		22CAFB232CD689C20077DBFE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB222CD689C20077DBFE /* RealmSwift */; };
+		22CAFB262CD68A210077DBFE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB252CD68A210077DBFE /* UserModel.swift */; };
+		22CAFB282CD68B140077DBFE /* UserPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB272CD68B140077DBFE /* UserPersistenceManager.swift */; };
+		22CAFB2A2CD68BBF0077DBFE /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB292CD68BBF0077DBFE /* CombineMoya */; };
+		22CAFB2C2CD68BBF0077DBFE /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB2B2CD68BBF0077DBFE /* Moya */; };
+		22CAFB2E2CD68BBF0077DBFE /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB2D2CD68BBF0077DBFE /* ReactiveMoya */; };
+		22CAFB302CD68BBF0077DBFE /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 22CAFB2F2CD68BBF0077DBFE /* RxMoya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +84,7 @@
 		22186AAB2CD19C2A0064D627 /* SocialSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSignupView.swift; sourceTree = "<group>"; };
 		22186AAD2CD19F210064D627 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		22CAFAF72CD676C80077DBFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22CAFAFC2CD677970077DBFE /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		22CAFAFC2CD677970077DBFE /* AuthorizationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationModule.swift; sourceTree = "<group>"; };
 		22CAFB022CD67C800077DBFE /* AuthorizationNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationNetworkManager.swift; sourceTree = "<group>"; };
 		22CAFB072CD67DD60077DBFE /* AuthorizationResponseDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationResponseDto.swift; sourceTree = "<group>"; };
 		22CAFB092CD67ECD0077DBFE /* UserDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDto.swift; sourceTree = "<group>"; };
@@ -82,6 +92,10 @@
 		22CAFB0D2CD6808F0077DBFE /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		22CAFB0F2CD6813C0077DBFE /* AuthorizationDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationDto.swift; sourceTree = "<group>"; };
 		22CAFB182CD6848D0077DBFE /* NetworkDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDependencies.swift; sourceTree = "<group>"; };
+		22CAFB1B2CD6865B0077DBFE /* PersistenceStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceStorage.swift; sourceTree = "<group>"; };
+		22CAFB1D2CD686C90077DBFE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		22CAFB252CD68A210077DBFE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		22CAFB272CD68B140077DBFE /* UserPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +103,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CAFB2E2CD68BBF0077DBFE /* ReactiveMoya in Frameworks */,
+				22CAFB232CD689C20077DBFE /* RealmSwift in Frameworks */,
+				22CAFB212CD689C20077DBFE /* Realm in Frameworks */,
+				22CAFB2C2CD68BBF0077DBFE /* Moya in Frameworks */,
 				22CAFB132CD681900077DBFE /* KeychainAccess in Frameworks */,
+				22CAFB2A2CD68BBF0077DBFE /* CombineMoya in Frameworks */,
+				22CAFB302CD68BBF0077DBFE /* RxMoya in Frameworks */,
 				22CAFB162CD684380077DBFE /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +157,7 @@
 				22CAFAFB2CD677800077DBFE /* Definitions */,
 				22CAFB172CD6846E0077DBFE /* Dependencies */,
 				22CAFAFF2CD6799F0077DBFE /* Network */,
+				22CAFB1A2CD686480077DBFE /* Persistence */,
 				22CAFAF92CD676F40077DBFE /* App */,
 				22186AA22CD195110064D627 /* View */,
 				22CAFAFA2CD677050077DBFE /* Assets */,
@@ -231,7 +252,8 @@
 		22CAFAFB2CD677800077DBFE /* Definitions */ = {
 			isa = PBXGroup;
 			children = (
-				22CAFAFC2CD677970077DBFE /* Network.swift */,
+				22CAFAFC2CD677970077DBFE /* AuthorizationModule.swift */,
+				22CAFB1D2CD686C90077DBFE /* Persistence.swift */,
 			);
 			path = Definitions;
 			sourceTree = "<group>";
@@ -239,6 +261,7 @@
 		22CAFAFF2CD6799F0077DBFE /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				22CAFB0D2CD6808F0077DBFE /* Server.swift */,
 				22CAFB042CD67DA40077DBFE /* Authorization */,
 			);
 			path = Network;
@@ -247,7 +270,6 @@
 		22CAFB042CD67DA40077DBFE /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				22CAFB0D2CD6808F0077DBFE /* Server.swift */,
 				22CAFB062CD67DC10077DBFE /* Models */,
 				22CAFB052CD67DB90077DBFE /* Managers */,
 			);
@@ -281,6 +303,24 @@
 			path = Dependencies;
 			sourceTree = "<group>";
 		};
+		22CAFB1A2CD686480077DBFE /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				22CAFB242CD68A090077DBFE /* Authorization */,
+				22CAFB1B2CD6865B0077DBFE /* PersistenceStorage.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		22CAFB242CD68A090077DBFE /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				22CAFB252CD68A210077DBFE /* UserModel.swift */,
+				22CAFB272CD68B140077DBFE /* UserPersistenceManager.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,6 +340,12 @@
 			packageProductDependencies = (
 				22CAFB122CD681900077DBFE /* KeychainAccess */,
 				22CAFB152CD684380077DBFE /* Factory */,
+				22CAFB202CD689C20077DBFE /* Realm */,
+				22CAFB222CD689C20077DBFE /* RealmSwift */,
+				22CAFB292CD68BBF0077DBFE /* CombineMoya */,
+				22CAFB2B2CD68BBF0077DBFE /* Moya */,
+				22CAFB2D2CD68BBF0077DBFE /* ReactiveMoya */,
+				22CAFB2F2CD68BBF0077DBFE /* RxMoya */,
 			);
 			productName = MySpendingApp;
 			productReference = 22186A672CD193CC0064D627 /* MySpendingApp.app */;
@@ -377,6 +423,7 @@
 				22CAFAFE2CD678C10077DBFE /* XCRemoteSwiftPackageReference "Moya" */,
 				22CAFB112CD681900077DBFE /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				22CAFB142CD684380077DBFE /* XCRemoteSwiftPackageReference "Factory" */,
+				22CAFB1F2CD689C20077DBFE /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 22186A682CD193CC0064D627 /* Products */;
 			projectDirPath = "";
@@ -433,12 +480,16 @@
 				22186AA52CD195A90064D627 /* WelcomeView.swift in Sources */,
 				22CAFB082CD67DD60077DBFE /* AuthorizationResponseDto.swift in Sources */,
 				22CAFAF82CD676C80077DBFE /* AppDelegate.swift in Sources */,
+				22CAFB1E2CD686C90077DBFE /* Persistence.swift in Sources */,
 				22CAFB102CD6813C0077DBFE /* AuthorizationDto.swift in Sources */,
 				22186AAA2CD19ABB0064D627 /* SecondaryButton.swift in Sources */,
 				22CAFB0E2CD6808F0077DBFE /* Server.swift in Sources */,
-				22CAFAFD2CD677970077DBFE /* Network.swift in Sources */,
+				22CAFAFD2CD677970077DBFE /* AuthorizationModule.swift in Sources */,
+				22CAFB282CD68B140077DBFE /* UserPersistenceManager.swift in Sources */,
 				22186AAC2CD19C2A0064D627 /* SocialSignupView.swift in Sources */,
+				22CAFB262CD68A210077DBFE /* UserModel.swift in Sources */,
 				22186A6B2CD193CC0064D627 /* MySpendingAppApp.swift in Sources */,
+				22CAFB1C2CD6865B0077DBFE /* PersistenceStorage.swift in Sources */,
 				22186A982CD1942B0064D627 /* UIExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -791,6 +842,14 @@
 				minimumVersion = 2.4.1;
 			};
 		};
+		22CAFB1F2CD689C20077DBFE /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.53.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -803,6 +862,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 22CAFB142CD684380077DBFE /* XCRemoteSwiftPackageReference "Factory" */;
 			productName = Factory;
+		};
+		22CAFB202CD689C20077DBFE /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22CAFB1F2CD689C20077DBFE /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		22CAFB222CD689C20077DBFE /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22CAFB1F2CD689C20077DBFE /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		22CAFB292CD68BBF0077DBFE /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22CAFAFE2CD678C10077DBFE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		22CAFB2B2CD68BBF0077DBFE /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22CAFAFE2CD678C10077DBFE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		22CAFB2D2CD68BBF0077DBFE /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22CAFAFE2CD678C10077DBFE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		22CAFB2F2CD68BBF0077DBFE /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22CAFAFE2CD678C10077DBFE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

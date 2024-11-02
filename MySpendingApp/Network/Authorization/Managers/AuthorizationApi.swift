@@ -13,7 +13,7 @@ extension AuthorizationApi: TargetType {
         switch self {
         case let .userRegister(_, server),
             let .userLogin(_, _, server),
-            let logout(server):
+            let .logout(server):
             return server.baseUrl
         }
     }

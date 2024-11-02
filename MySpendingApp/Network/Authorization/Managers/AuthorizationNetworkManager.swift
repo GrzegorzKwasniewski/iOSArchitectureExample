@@ -3,14 +3,14 @@ import CombineMoya
 import Combine
 
 protocol AuthorizationNetworkProtocol {
-    func postLogin(email: String, password: String) -> AnyPublisher<Response, MoyaError>
-    func postLogout() -> AnyPublisher<Empty, MoyaError>
+    func postLogin(email: String, password: String) -> AnyPublisher<AuthorizationResponseDto, MoyaError>
+    func postLogout() -> AnyPublisher<Response, MoyaError>
 }
 
 final class AuthorizationNetworkManager: AuthorizationModule.Network {
 
     private let server: Server
-    private let authApiProvider = MoyaProvider<AuthorizationApi>(plugins: MoyaPlugin.default)
+    private let provider = MoyaProvider<AuthorizationApi>(plugins: [NetworkLoggerPlugin()])
 
     // MARK: - INITIALIZER
 
@@ -21,15 +21,15 @@ final class AuthorizationNetworkManager: AuthorizationModule.Network {
     // MARK: - INTERNAL METHODS
 
     func postLogin(email: String, password: String) -> AnyPublisher<AuthorizationResponseDto, MoyaError> {
-        authApiProvider
-            .provider.requestPublisher(.userLogin(userName: email, userPassword: password, server: server))
+        provider
+            .requestPublisher(.userLogin(userName: email, userPassword: password, server: server))
             .filterSuccessfulStatusAndRedirectCodes()
             .map(AuthorizationResponseDto.self)
     }
 
     func postLogout() -> AnyPublisher<Response, MoyaError> {
-        authApiProvider
-            .provider.requestPublisher(.logout(server: server))
+        provider
+            .requestPublisher(.logout(server: server))
             .filterSuccessfulStatusAndRedirectCodes()
     }
 }
