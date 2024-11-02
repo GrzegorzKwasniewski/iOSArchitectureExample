@@ -1,0 +1,75 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "By registering, you agree to our Terms of Use. Learn how we collect, use and share your data." : {
+
+    },
+    "E-mail" : {
+
+    },
+    "E-mail jest nieprawidłowy" : {
+
+    },
+    "Email" : {
+
+    },
+    "Email is not valid" : {
+
+    },
+    "Field is empty" : {
+
+    },
+    "Hasło" : {
+
+    },
+    "lub" : {
+
+    },
+    "or" : {
+
+    },
+    "Password" : {
+
+    },
+    "Phone number" : {
+
+    },
+    "Podaj e-mail" : {
+
+    },
+    "PrimaryButton" : {
+
+    },
+    "PrimaryButton disabled" : {
+
+    },
+    "Przypomnij hasło" : {
+
+    },
+    "Sign up with Apple" : {
+
+    },
+    "Sign up with Facebook" : {
+
+    },
+    "Sign up with Google" : {
+
+    },
+    "TertiaryButton" : {
+
+    },
+    "UnderlinedButton Center" : {
+
+    },
+    "UnderlinedButton Leading" : {
+
+    },
+    "Zaloguj się" : {
+
+    }
+  },
+  "version" : "1.0"
+}

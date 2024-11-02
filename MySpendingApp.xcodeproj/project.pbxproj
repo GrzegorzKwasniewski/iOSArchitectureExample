@@ -67,6 +67,7 @@
 		22CAFB7B2CD6CD550077DBFE /* FloatingFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB7A2CD6CD550077DBFE /* FloatingFieldStyle.swift */; };
 		22CAFB7D2CD6D0AA0077DBFE /* FloatingFieldState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB7C2CD6D0AA0077DBFE /* FloatingFieldState.swift */; };
 		22CAFB7F2CD6D1160077DBFE /* ValidationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB7E2CD6D1160077DBFE /* ValidationStorage.swift */; };
+		22CAFB812CD6E9310077DBFE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 22CAFB802CD6E9310077DBFE /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +145,7 @@
 		22CAFB7A2CD6CD550077DBFE /* FloatingFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingFieldStyle.swift; sourceTree = "<group>"; };
 		22CAFB7C2CD6D0AA0077DBFE /* FloatingFieldState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingFieldState.swift; sourceTree = "<group>"; };
 		22CAFB7E2CD6D1160077DBFE /* ValidationStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationStorage.swift; sourceTree = "<group>"; };
+		22CAFB802CD6E9310077DBFE /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +303,7 @@
 				22186A992CD1947E0064D627 /* Fonts */,
 				22CAFB662CD6C6C00077DBFE /* Fonts */,
 				22186A702CD193CE0064D627 /* Assets.xcassets */,
+				22CAFB802CD6E9310077DBFE /* Localizable.xcstrings */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 			files = (
 				22186A742CD193CE0064D627 /* Preview Assets.xcassets in Resources */,
 				22CAFB6B2CD6C6C00077DBFE /* Satoshi-Bold.ttf in Resources */,
+				22CAFB812CD6E9310077DBFE /* Localizable.xcstrings in Resources */,
 				22186A712CD193CE0064D627 /* Assets.xcassets in Resources */,
 				22CAFB6A2CD6C6C00077DBFE /* Satoshi-Regular.ttf in Resources */,
 				22CAFB6C2CD6C6C00077DBFE /* Satoshi-Medium.ttf in Resources */,
