@@ -18,7 +18,7 @@ final class UserModel: Object {
     
     convenience init(response: AuthorizationResponseDto) {
         self.init()
-        id = "\(response.user.id ?? 0)"
+        id = response.user.uuid
         email = response.user.email ?? ""
         userName = response.user.lastName ?? ""
     }
