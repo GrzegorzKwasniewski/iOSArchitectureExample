@@ -14,13 +14,7 @@
 		22186A882CD193CF0064D627 /* MySpendingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22186A872CD193CF0064D627 /* MySpendingAppUITests.swift */; };
 		22186A8A2CD193CF0064D627 /* MySpendingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22186A892CD193CF0064D627 /* MySpendingAppUITestsLaunchTests.swift */; };
 		22186A982CD1942B0064D627 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22186A972CD1942B0064D627 /* UIExtension.swift */; };
-		22186A9E2CD194E20064D627 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22186A9A2CD194E20064D627 /* Inter-SemiBold.ttf */; };
-		22186A9F2CD194E20064D627 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22186A9B2CD194E20064D627 /* Inter-Regular.ttf */; };
-		22186AA02CD194E20064D627 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22186A9C2CD194E20064D627 /* Inter-Bold.ttf */; };
-		22186AA12CD194E20064D627 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22186A9D2CD194E20064D627 /* Inter-Medium.ttf */; };
 		22186AA52CD195A90064D627 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22186AA42CD195A90064D627 /* WelcomeView.swift */; };
-		22186AA82CD1970F0064D627 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22186AA72CD1970E0064D627 /* PrimaryButton.swift */; };
-		22186AAA2CD19ABB0064D627 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22186AA92CD19ABB0064D627 /* SecondaryButton.swift */; };
 		22186AAC2CD19C2A0064D627 /* SocialSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22186AAB2CD19C2A0064D627 /* SocialSignupView.swift */; };
 		22186AAE2CD19F210064D627 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22186AAD2CD19F210064D627 /* SignInView.swift */; };
 		22CAFAF82CD676C80077DBFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFAF72CD676C80077DBFE /* AppDelegate.swift */; };
@@ -59,6 +53,20 @@
 		22CAFB5D2CD6AB850077DBFE /* ViewDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB5C2CD6AB850077DBFE /* ViewDependencies.swift */; };
 		22CAFB5F2CD6AC700077DBFE /* DomainDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB5E2CD6AC700077DBFE /* DomainDependencies.swift */; };
 		22CAFB612CD6AEB50077DBFE /* NavigationDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB602CD6AEB50077DBFE /* NavigationDependencies.swift */; };
+		22CAFB632CD6C5870077DBFE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB622CD6C5870077DBFE /* HeaderView.swift */; };
+		22CAFB652CD6C66D0077DBFE /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB642CD6C66D0077DBFE /* Font+Ext.swift */; };
+		22CAFB6A2CD6C6C00077DBFE /* Satoshi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22CAFB672CD6C6C00077DBFE /* Satoshi-Regular.ttf */; };
+		22CAFB6B2CD6C6C00077DBFE /* Satoshi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22CAFB682CD6C6C00077DBFE /* Satoshi-Bold.ttf */; };
+		22CAFB6C2CD6C6C00077DBFE /* Satoshi-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22CAFB692CD6C6C00077DBFE /* Satoshi-Medium.ttf */; };
+		22CAFB6F2CD6C8380077DBFE /* FloatingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB6E2CD6C8380077DBFE /* FloatingForm.swift */; };
+		22CAFB712CD6C8F00077DBFE /* FloatFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB702CD6C8F00077DBFE /* FloatFieldValidator.swift */; };
+		22CAFB732CD6C95D0077DBFE /* SplitDividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB722CD6C95D0077DBFE /* SplitDividerView.swift */; };
+		22CAFB752CD6CA2F0077DBFE /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB742CD6CA2F0077DBFE /* CustomButtons.swift */; };
+		22CAFB772CD6CB000077DBFE /* CustomToolBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB762CD6CB000077DBFE /* CustomToolBarItems.swift */; };
+		22CAFB792CD6CC7E0077DBFE /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB782CD6CC7E0077DBFE /* FloatingTextField.swift */; };
+		22CAFB7B2CD6CD550077DBFE /* FloatingFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB7A2CD6CD550077DBFE /* FloatingFieldStyle.swift */; };
+		22CAFB7D2CD6D0AA0077DBFE /* FloatingFieldState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB7C2CD6D0AA0077DBFE /* FloatingFieldState.swift */; };
+		22CAFB7F2CD6D1160077DBFE /* ValidationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB7E2CD6D1160077DBFE /* ValidationStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,13 +97,7 @@
 		22186A872CD193CF0064D627 /* MySpendingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpendingAppUITests.swift; sourceTree = "<group>"; };
 		22186A892CD193CF0064D627 /* MySpendingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpendingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		22186A972CD1942B0064D627 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
-		22186A9A2CD194E20064D627 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
-		22186A9B2CD194E20064D627 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
-		22186A9C2CD194E20064D627 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
-		22186A9D2CD194E20064D627 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		22186AA42CD195A90064D627 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		22186AA72CD1970E0064D627 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
-		22186AA92CD19ABB0064D627 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		22186AAB2CD19C2A0064D627 /* SocialSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSignupView.swift; sourceTree = "<group>"; };
 		22186AAD2CD19F210064D627 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		22CAFAF72CD676C80077DBFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,21 @@
 		22CAFB5C2CD6AB850077DBFE /* ViewDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDependencies.swift; sourceTree = "<group>"; };
 		22CAFB5E2CD6AC700077DBFE /* DomainDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainDependencies.swift; sourceTree = "<group>"; };
 		22CAFB602CD6AEB50077DBFE /* NavigationDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDependencies.swift; sourceTree = "<group>"; };
+		22CAFB622CD6C5870077DBFE /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		22CAFB642CD6C66D0077DBFE /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
+		22CAFB672CD6C6C00077DBFE /* Satoshi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.ttf"; sourceTree = "<group>"; };
+		22CAFB682CD6C6C00077DBFE /* Satoshi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.ttf"; sourceTree = "<group>"; };
+		22CAFB692CD6C6C00077DBFE /* Satoshi-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.ttf"; sourceTree = "<group>"; };
+		22CAFB6D2CD6C7820077DBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22CAFB6E2CD6C8380077DBFE /* FloatingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingForm.swift; sourceTree = "<group>"; };
+		22CAFB702CD6C8F00077DBFE /* FloatFieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatFieldValidator.swift; sourceTree = "<group>"; };
+		22CAFB722CD6C95D0077DBFE /* SplitDividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitDividerView.swift; sourceTree = "<group>"; };
+		22CAFB742CD6CA2F0077DBFE /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
+		22CAFB762CD6CB000077DBFE /* CustomToolBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToolBarItems.swift; sourceTree = "<group>"; };
+		22CAFB782CD6CC7E0077DBFE /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
+		22CAFB7A2CD6CD550077DBFE /* FloatingFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingFieldStyle.swift; sourceTree = "<group>"; };
+		22CAFB7C2CD6D0AA0077DBFE /* FloatingFieldState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingFieldState.swift; sourceTree = "<group>"; };
+		22CAFB7E2CD6D1160077DBFE /* ValidationStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +201,7 @@
 		22186A692CD193CC0064D627 /* MySpendingApp */ = {
 			isa = PBXGroup;
 			children = (
+				22CAFB6D2CD6C7820077DBFE /* Info.plist */,
 				22CAFAFB2CD677800077DBFE /* Definitions */,
 				22CAFB172CD6846E0077DBFE /* Dependencies */,
 				22CAFB4B2CD69F0E0077DBFE /* Navigation */,
@@ -228,8 +246,16 @@
 			isa = PBXGroup;
 			children = (
 				22186A972CD1942B0064D627 /* UIExtension.swift */,
-				22186AA72CD1970E0064D627 /* PrimaryButton.swift */,
-				22186AA92CD19ABB0064D627 /* SecondaryButton.swift */,
+				22CAFB622CD6C5870077DBFE /* HeaderView.swift */,
+				22CAFB6E2CD6C8380077DBFE /* FloatingForm.swift */,
+				22CAFB702CD6C8F00077DBFE /* FloatFieldValidator.swift */,
+				22CAFB722CD6C95D0077DBFE /* SplitDividerView.swift */,
+				22CAFB742CD6CA2F0077DBFE /* CustomButtons.swift */,
+				22CAFB762CD6CB000077DBFE /* CustomToolBarItems.swift */,
+				22CAFB782CD6CC7E0077DBFE /* FloatingTextField.swift */,
+				22CAFB7A2CD6CD550077DBFE /* FloatingFieldStyle.swift */,
+				22CAFB7C2CD6D0AA0077DBFE /* FloatingFieldState.swift */,
+				22CAFB7E2CD6D1160077DBFE /* ValidationStorage.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -237,10 +263,6 @@
 		22186A992CD1947E0064D627 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				22186A9C2CD194E20064D627 /* Inter-Bold.ttf */,
-				22186A9D2CD194E20064D627 /* Inter-Medium.ttf */,
-				22186A9B2CD194E20064D627 /* Inter-Regular.ttf */,
-				22186A9A2CD194E20064D627 /* Inter-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -277,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				22186A992CD1947E0064D627 /* Fonts */,
+				22CAFB662CD6C6C00077DBFE /* Fonts */,
 				22186A702CD193CE0064D627 /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -409,6 +432,7 @@
 			children = (
 				22186A962CD194110064D627 /* UICommon */,
 				22CAFB512CD6A0AD0077DBFE /* Logger+Ext.swift */,
+				22CAFB642CD6C66D0077DBFE /* Font+Ext.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -421,6 +445,17 @@
 				22186AA42CD195A90064D627 /* WelcomeView.swift */,
 			);
 			path = Temp;
+			sourceTree = "<group>";
+		};
+		22CAFB662CD6C6C00077DBFE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				22CAFB672CD6C6C00077DBFE /* Satoshi-Regular.ttf */,
+				22CAFB682CD6C6C00077DBFE /* Satoshi-Bold.ttf */,
+				22CAFB692CD6C6C00077DBFE /* Satoshi-Medium.ttf */,
+			);
+			name = Fonts;
+			path = ../../../ValentynaiOS/Valentyna/Valentyna/Resources/Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -542,12 +577,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22186A9E2CD194E20064D627 /* Inter-SemiBold.ttf in Resources */,
-				22186AA02CD194E20064D627 /* Inter-Bold.ttf in Resources */,
-				22186AA12CD194E20064D627 /* Inter-Medium.ttf in Resources */,
 				22186A742CD193CE0064D627 /* Preview Assets.xcassets in Resources */,
-				22186A9F2CD194E20064D627 /* Inter-Regular.ttf in Resources */,
+				22CAFB6B2CD6C6C00077DBFE /* Satoshi-Bold.ttf in Resources */,
 				22186A712CD193CE0064D627 /* Assets.xcassets in Resources */,
+				22CAFB6A2CD6C6C00077DBFE /* Satoshi-Regular.ttf in Resources */,
+				22CAFB6C2CD6C6C00077DBFE /* Satoshi-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,18 +606,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CAFB732CD6C95D0077DBFE /* SplitDividerView.swift in Sources */,
 				22CAFB3B2CD697D10077DBFE /* PersistenceDependencies.swift in Sources */,
 				22CAFB0C2CD6802F0077DBFE /* AuthorizationApi.swift in Sources */,
 				22186AAE2CD19F210064D627 /* SignInView.swift in Sources */,
 				22CAFB032CD67C800077DBFE /* AuthorizationNetworkManager.swift in Sources */,
+				22CAFB712CD6C8F00077DBFE /* FloatFieldValidator.swift in Sources */,
 				22CAFB0A2CD67ECD0077DBFE /* UserDto.swift in Sources */,
+				22CAFB632CD6C5870077DBFE /* HeaderView.swift in Sources */,
 				22CAFB592CD6A7B70077DBFE /* LoginViewModel.swift in Sources */,
-				22186AA82CD1970F0064D627 /* PrimaryButton.swift in Sources */,
 				22CAFB5B2CD6A88E0077DBFE /* LoginViewState.swift in Sources */,
+				22CAFB6F2CD6C8380077DBFE /* FloatingForm.swift in Sources */,
 				22CAFB522CD6A0AD0077DBFE /* Logger+Ext.swift in Sources */,
 				22CAFB4D2CD69F310077DBFE /* AppNavigation.swift in Sources */,
 				22CAFB192CD6848D0077DBFE /* NetworkDependencies.swift in Sources */,
 				22CAFB452CD69A1D0077DBFE /* KeychainManager.swift in Sources */,
+				22CAFB7B2CD6CD550077DBFE /* FloatingFieldStyle.swift in Sources */,
+				22CAFB752CD6CA2F0077DBFE /* CustomButtons.swift in Sources */,
 				22186AA52CD195A90064D627 /* WelcomeView.swift in Sources */,
 				22CAFB082CD67DD60077DBFE /* AuthorizationResponseDto.swift in Sources */,
 				22CAFAF82CD676C80077DBFE /* AppDelegate.swift in Sources */,
@@ -591,22 +630,26 @@
 				22CAFB1E2CD686C90077DBFE /* Persistence.swift in Sources */,
 				22CAFB102CD6813C0077DBFE /* AuthorizationDto.swift in Sources */,
 				22CAFB612CD6AEB50077DBFE /* NavigationDependencies.swift in Sources */,
-				22186AAA2CD19ABB0064D627 /* SecondaryButton.swift in Sources */,
 				22CAFB0E2CD6808F0077DBFE /* Server.swift in Sources */,
 				22CAFB542CD6A1830077DBFE /* LoginView.swift in Sources */,
+				22CAFB792CD6CC7E0077DBFE /* FloatingTextField.swift in Sources */,
 				22CAFB422CD698EC0077DBFE /* AuthorizationDomainManager.swift in Sources */,
 				22CAFAFD2CD677970077DBFE /* AuthorizationModule.swift in Sources */,
 				22CAFB562CD6A1BC0077DBFE /* ViewFactory.swift in Sources */,
 				22CAFB282CD68B140077DBFE /* UserPersistenceManager.swift in Sources */,
 				22CAFB4A2CD69B6B0077DBFE /* AggregatedError.swift in Sources */,
+				22CAFB7F2CD6D1160077DBFE /* ValidationStorage.swift in Sources */,
+				22CAFB7D2CD6D0AA0077DBFE /* FloatingFieldState.swift in Sources */,
 				22186AAC2CD19C2A0064D627 /* SocialSignupView.swift in Sources */,
 				22CAFB4F2CD6A0020077DBFE /* BaseNavigation.swift in Sources */,
 				22CAFB262CD68A210077DBFE /* UserModel.swift in Sources */,
 				22CAFB3F2CD6986D0077DBFE /* UserModelDto.swift in Sources */,
+				22CAFB652CD6C66D0077DBFE /* Font+Ext.swift in Sources */,
 				22186A6B2CD193CC0064D627 /* MySpendingAppApp.swift in Sources */,
 				22CAFB5D2CD6AB850077DBFE /* ViewDependencies.swift in Sources */,
 				22CAFB5F2CD6AC700077DBFE /* DomainDependencies.swift in Sources */,
 				22CAFB1C2CD6865B0077DBFE /* PersistenceStorage.swift in Sources */,
+				22CAFB772CD6CB000077DBFE /* CustomToolBarItems.swift in Sources */,
 				22186A982CD1942B0064D627 /* UIExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -773,6 +816,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MySpendingApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MySpendingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -802,6 +846,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MySpendingApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MySpendingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

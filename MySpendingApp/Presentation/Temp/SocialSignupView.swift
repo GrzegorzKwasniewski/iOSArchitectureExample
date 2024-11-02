@@ -111,14 +111,6 @@ struct SocialSignupView: View {
                     .foregroundColor(.white)
                     .padding(.bottom, 25)
                 
-                SecondaryButton(title: "Sign up with E-mail", onPressed: {
-                    showSignUp.toggle()
-                })
-                .background( NavigationLink(destination: SignInView(), isActive: $showSignUp, label: {
-                    EmptyView()
-                }))
-                .padding(.bottom, 20)
-                
                 Text("By registering, you agree to our Terms of Use. Learn how we collect, use and share your data.")
                     .multilineTextAlignment(.center)
                     .font(.customfont(.regular, fontSize: 14))

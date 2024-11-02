@@ -6,7 +6,7 @@ protocol LoginViewModelProtocol<ViewState> where Self: ObservableObject {
     
     associatedtype ViewState
     
-    var loginViewState: ViewState { get set }
+    var viewState: ViewState { get set }
     func loginUser()
     func pushPasswordReminderView()
 }
@@ -21,14 +21,14 @@ final class LoginViewModel<ViewState>: AuthorizationModule.ViewModel where ViewS
     
     // MARK: - OBSERVED PROPERTIES
     
-    @Published var loginViewState: ViewState
+    @Published var viewState: ViewState
     
     // MARK: - INITIALIZER
     
     init(navigation: AppNavigation, authDomainManager: AuthorizationModule.Domain, viewState: ViewState) {
         self.navigation = navigation
         self.authDomainManager = authDomainManager
-        self.loginViewState = viewState
+        self.viewState = viewState
     }
     
     // MARK: - PUBLIC METHODS
@@ -36,14 +36,13 @@ final class LoginViewModel<ViewState>: AuthorizationModule.ViewModel where ViewS
     func loginUser() {
         authDomainManager
             .emailLoginMergeWithToken(
-                userEmail: loginViewState.usernameValue,
-                userPassword: loginViewState.userPasswordValue
+                userEmail: viewState.email,
+                userPassword: viewState.password
             )
             .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { [weak self] completion in
                     if let self, case let .failure(error) = completion {
-                        self.loginViewState.showErrorAlert()
                         Logger.navigation.error("Email login error. Error = \(String(describing: error.getLastError()))")
                     }
                 },

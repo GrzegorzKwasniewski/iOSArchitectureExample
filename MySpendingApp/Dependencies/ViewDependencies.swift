@@ -2,7 +2,7 @@ import Factory
 
 extension Container {
     
-    var loginView: Factory<LoginView<LoginViewModel<LoginViewState>>> {
+    var loginView: Factory<LoginView> {
         self { LoginView() }
     }
     

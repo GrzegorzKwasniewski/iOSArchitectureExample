@@ -1,45 +1,20 @@
 import Foundation
 
 protocol LoginViewStateProtocol where Self: ObservableObject {
-    var errorAlert: Bool { get set }
-    var isFocusable: [Bool] { get set }
-    var isSecureTextEntry: Bool { get set }
-    var usernameValue: String { get set }
-    var userPasswordValue: String { get set }
-    func showErrorAlert()
-    func hideErrorAlert()
+    var email: String { get set }
+    var emailError: LocalizedStringResource? { get set }
+    var password: String { get set }
+    var passwordError: LocalizedStringResource? { get set }
 }
 
 final class LoginViewState: ObservableObject, AuthorizationModule.ViewState {
+        
+    @Published var email: String = ""
+    @Published var emailError: LocalizedStringResource? = nil
     
-    @Published var activityIndicator = false
-    @Published var errorAlert = false
+    @Published var password: String = ""
+    @Published var passwordError: LocalizedStringResource? = nil
     
-    @Published var usernameValue: String = ""
-    @Published var userPasswordValue: String = ""
-    
-    @Published var isFocusable: [Bool] = [true, false]
-    @Published var isSecureTextEntry: Bool = false
-    
-    func startActivityIndicator() {
-        self.activityIndicator = true
-    }
-    
-    func stopActivityIndicator() {
-        self.activityIndicator = false
-    }
-    
-    func showErrorAlert() {
-        self.errorAlert = true
-    }
-    
-    func hideErrorAlert() {
-        self.errorAlert = false
-    }
-    
-    func isLoading() -> Bool {
-        return activityIndicator
-    }
 }
 
 extension LoginViewState: Equatable {
