@@ -1,4 +1,3 @@
-import AuthenticationServices
 import Factory
 import SwiftUI
 
@@ -19,9 +18,6 @@ struct LoginView: View {
                     }
                 })
             }
-
-            SplitDividerView()
-
         }
         .frame(maxHeight: .infinity)
         .padding()

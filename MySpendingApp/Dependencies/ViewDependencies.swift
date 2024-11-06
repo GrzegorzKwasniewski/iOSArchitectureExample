@@ -2,6 +2,8 @@ import Factory
 
 extension Container {
     
+    // MARK: LOGIN VIEW
+    
     var loginView: Factory<LoginView> {
         self { LoginView() }
     }
@@ -16,5 +18,11 @@ extension Container {
     
     var loginViewState: Factory<LoginViewState> {
         self { LoginViewState() }
+    }
+    
+    // MARK: MAIN VIEW
+    
+    var mainView: Factory<MainView> {
+        self { MainView() }
     }
 }

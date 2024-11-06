@@ -12,7 +12,7 @@ import SwiftData
 struct MySpendingAppApp: App {
     var body: some Scene {
         WindowGroup {
-            WelcomView()
+            LoginView()
         }
     }
 }

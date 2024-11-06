@@ -68,6 +68,7 @@
 		22CAFB7D2CD6D0AA0077DBFE /* FloatingFieldState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB7C2CD6D0AA0077DBFE /* FloatingFieldState.swift */; };
 		22CAFB7F2CD6D1160077DBFE /* ValidationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB7E2CD6D1160077DBFE /* ValidationStorage.swift */; };
 		22CAFB812CD6E9310077DBFE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 22CAFB802CD6E9310077DBFE /* Localizable.xcstrings */; };
+		22CAFB842CDBD7790077DBFE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAFB832CDBD7790077DBFE /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,7 @@
 		22CAFB7C2CD6D0AA0077DBFE /* FloatingFieldState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingFieldState.swift; sourceTree = "<group>"; };
 		22CAFB7E2CD6D1160077DBFE /* ValidationStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationStorage.swift; sourceTree = "<group>"; };
 		22CAFB802CD6E9310077DBFE /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		22CAFB832CDBD7790077DBFE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,8 +274,9 @@
 		22186AA22CD195110064D627 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				22CAFB572CD6A79A0077DBFE /* Temp */,
 				22186AA32CD195200064D627 /* Login */,
+				22CAFB822CDBD7510077DBFE /* Main */,
+				22CAFB572CD6A79A0077DBFE /* Temp */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -461,6 +464,14 @@
 			path = ../../../ValentynaiOS/Valentyna/Valentyna/Resources/Fonts;
 			sourceTree = "<group>";
 		};
+		22CAFB822CDBD7510077DBFE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				22CAFB832CDBD7790077DBFE /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -629,6 +640,7 @@
 				22CAFB752CD6CA2F0077DBFE /* CustomButtons.swift in Sources */,
 				22186AA52CD195A90064D627 /* WelcomeView.swift in Sources */,
 				22CAFB082CD67DD60077DBFE /* AuthorizationResponseDto.swift in Sources */,
+				22CAFB842CDBD7790077DBFE /* MainView.swift in Sources */,
 				22CAFAF82CD676C80077DBFE /* AppDelegate.swift in Sources */,
 				22CAFB482CD69AB70077DBFE /* AuthorizationError.swift in Sources */,
 				22CAFB1E2CD686C90077DBFE /* Persistence.swift in Sources */,
