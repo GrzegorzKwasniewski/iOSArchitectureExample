@@ -91,7 +91,7 @@ struct PrimaryButtonStyle: ButtonStyle {
             .foregroundStyle(isEnabled ? .whiteBG : .greyNormal)
             .padding(15)
             .frame(maxWidth: maxWidth)
-            .background(isEnabled ? .violetNormalPrimary : .greyLightActive)
+            .background(isEnabled ? .violetLightActive : .greyLightActive)
             .opacity(configuration.isPressed ? 0.5 : 1)
             .clipShape(RoundedRectangle(cornerRadius: 12))
     }

@@ -13,7 +13,7 @@ enum FloatingFieldState {
         case .focused:
             style.backgroundColor.focused
         case .error:
-            style.backgroundColor.error
+            style.backgroundColor.idle
         case .disabled:
             style.backgroundColor.disabled
         }
